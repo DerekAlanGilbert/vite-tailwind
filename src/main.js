@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import './assets/main.css'
+import VueformSlider from '@vueform/slider'
 import App from './App.vue'
 import { routes } from './routes.js'
 import { createRouter, createWebHistory } from 'vue-router'
@@ -26,6 +27,8 @@ if (import.meta.hot) {
     router.replace('')
   })
 }
+
+app.component('Range', VueformSlider)
 
 app.use(router)
 

@@ -13,6 +13,11 @@ module.exports = {
       // etc.
     ],
   },
+  variants: {
+    extend: {
+      margin: ['first'],
+    },
+  },
   theme: {
     extend: {
       fontWeight: ['hover', 'focus'],
